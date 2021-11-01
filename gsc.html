@@ -1,10 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<script src="gscope.js"></script>
-</head>
 <body>
-<p style="color:orange;font-size:28px;"><b>Global Scope:</b> Variables declared outside of any function become global variables. Global variables can be accessed and modified from any function.</p>
-  <p style="color:red;font-size:28px;">See the source and console to verify.</p>
-  </body>
+	<h1>JavaScript Global scope example</h1>
+	
+	<script>
+		 var userName = "Rainav";
+
+		function modifyUserName() {
+            userName = "Dhairvi";
+        };
+
+	    function showUserName() {
+            alert(userName);
+        };
+
+
+		alert(userName);
+
+		modifyUserName();
+		showUserName();
+		
+    </script>
+</body>
 </html>
