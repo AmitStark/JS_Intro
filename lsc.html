@@ -1,10 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<script src="gscope.js"></script>
-</head>
 <body>
-<p style="color:red;font-size:28px;"><b>Local Scope:</b> Variables declared inside any function with var keyword are called local variables. Local variables cannot be accessed or modified outside the function declaration.</p>
-<p style="color:orange;font-size:28px;">See the source and console to verify.</p>
-  </body>
+	<h1>Demo: Global scope</h1>
+	<p id="error"></p>
+
+	<script>
+		function createUserName() {
+			var userName = "Amit";
+		}
+
+		function showUserName() {
+			try{
+				alert(userName);
+			}
+			catch(ex)
+			{
+				document.getElementById("error").innerHTML = ex;
+			}
+		}
+
+		createUserName();
+		showUserName(); 
+
+	</script>
+</body>
 </html>
