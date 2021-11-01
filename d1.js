@@ -1,3 +1,1 @@
-function sayHello() {
- alert("Hello World")
-}
+var x = "hiya this is amit";
